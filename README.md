@@ -28,12 +28,12 @@ cd sync_folder
 ## Usage
 
 ```
-python main.py [--source SOURCE] [--replica REPLICA] [--log-file LOG_FILE] [--time-interval TIME_INTERVAL]
+python main.py [SOURCE] [REPLICA] [ LOG_FILE] [--time-interval TIME_INTERVAL]
 ```
 
-- `--source`: Path to the source folder to be synchronized (default: "source").
-- `--replica`: Path to the replica folder that will be updated to match the source folder (default: "replica").
-- `--log-file`: Path to the log file (default: "log.txt").
+- `source`: Path to the source folder to be synchronized (default: "source").
+- `replica`: Path to the replica folder that will be updated to match the source folder (default: "replica").
+- `log-file`: Path to the log file (default: "log.txt").
 - `--time-interval`: Time interval for synchronization in seconds (default: 60).
 
 ## Example
@@ -41,7 +41,7 @@ python main.py [--source SOURCE] [--replica REPLICA] [--log-file LOG_FILE] [--ti
 To synchronize a folder named "source_folder" to "replica_folder" with a time interval of 120 seconds and log the synchronization process to "sync_log.txt", run the following command:
 
 ```
-python main.py --source source_folder --replica replica_folder --log-file sync_log.txt --time-interval 120
+python main.py source_folder replica_folder log-file  --time-interval 120
 ```
 
 ## Notes
