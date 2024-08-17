@@ -46,6 +46,7 @@ def main():
     parser.add_argument('source_folder',type=str,help="Path to source")
     parser.add_argument('replica_folder',type=str,help="path to replica")
     parser.add_argument('log_file',type=str,help="path to log_file")
+    parser.add_argument('--time-interval', type=int, default=60, help='Time interval for synchronization in seconds')
 
     args = parser.parse_args()
 
@@ -64,7 +65,7 @@ def main():
         synchronize_folders(args.source_folder,args.replica_folder)
         utilis.logging.info("File Synchronized")
         print("File Synchronized")
-        time.sleep(60)
+        time.sleep(args.time_interval)
 
 main()
 
