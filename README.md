@@ -6,6 +6,16 @@
 * File creation/copying/removal operations  logged to a file and to the console output.
 * Folder paths, synchronization interval and log file path  provided using the command line arguments.
 
+##Installation
+Clone the repository:
+
+```
+https://github.com/sowvino/sync_folder.git
+```
+```
+cd sync_folder
+```
+
 ## Requirements
 
 * Python 3.x
